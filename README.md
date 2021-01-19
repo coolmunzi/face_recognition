@@ -1,4 +1,4 @@
-**Introduction**
+### **Introduction**
 
 This Face Recognition project is based on MTCNN, MXNet and Keras. This project performs following
 tasks:
@@ -11,8 +11,7 @@ tasks:
 
 4. Using the model generated, predict the person's face from webcam feed.
 
-
-**Applications of Face Recognition**
+### **Applications of Face Recognition**
 
 1. Online Account Verification
 2. Attendance System
@@ -20,9 +19,7 @@ tasks:
 4. Pension and Visa verification
 5. Criminal suspect identification
 
-
-
-**Tech Stack Used**
+### **Tech Stack Used**
 
 1. [MTCNN](https://github.com/ipazc/mtcnn) for face detection
 
@@ -34,7 +31,8 @@ tasks:
 
 5. [DLib](https://github.com/davisking/dlib) for face tracking
 
-**Usage**
+
+### **Usage**
 
 1. Clone the repository: 
    
