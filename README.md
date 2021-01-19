@@ -11,6 +11,7 @@ tasks:
 
 4. Using the model generated, predict the person's face from webcam feed.
 
+
 **Applications of Face Recognition**
 
 1. Online Account Verification
@@ -18,6 +19,7 @@ tasks:
 3. Office Security Clearance
 4. Pension and Visa verification
 5. Criminal suspect identification
+
 
 
 **Tech Stack Used**
@@ -29,6 +31,8 @@ tasks:
 3. [Keras](https://keras.io/) for creating Face Recognition model
 
 4. [OpenCV](https://opencv.org/) for image processing
+
+5. [DLib](https://github.com/davisking/dlib) for face tracking
 
 **Usage**
 

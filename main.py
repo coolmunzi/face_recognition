@@ -1,7 +1,6 @@
-import capture_faces as cap_face
-import generate_face_embeddings as gen_face_emb
-import facial_recognition_model_training as face_recog_model_train
-from face_predictor import FacePredictor
+from utils import capture_faces as cap_face, facial_recognition_model_training as face_recog_model_train, \
+    generate_face_embeddings as gen_face_emb
+from utils.face_predictor import FacePredictor
 
 if __name__ == '__main__':
     name = input("Enter name of the person: ")
