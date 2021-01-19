@@ -100,7 +100,10 @@ class FacePredictor():
             frames += 1
             frame = cv2.resize(frame, (save_width, save_height))
             rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-
+            text = "Running the prediction"
+            cv2.putText(frame, text,
+                        (int(0.3 * frame.shape[1]), int(0.05 * frame.shape[0])), cv2.FONT_HERSHEY_SIMPLEX, 0.8,
+                        (255, 0, 0), 2)
             if frames % 3 == 0:
                 trackers = []
                 texts = []

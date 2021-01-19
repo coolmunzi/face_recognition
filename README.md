@@ -5,7 +5,7 @@ tasks:
 
 1. Capture images of person's face using MTCNN from the webcam for training
 
-2. Extract embeddings of face from the stored images using MXNET based Insightface
+2. Extract features of face from the stored images using MXNET based Insightface
 
 3. Train the Keras based model for face recognition using captured face embeddings and stored images
 
@@ -22,13 +22,13 @@ tasks:
 
 **Tech Stack Used**
 
-1. MTCNN for face detection
+1. [MTCNN](https://github.com/ipazc/mtcnn) for face detection
 
-2. MXNet based Insightface for capturing facial embeddings
+2. [MXNet](https://mxnet.apache.org/) based [Insightface](https://github.com/deepinsight/insightface) for capturing facial features
 
-3. Keras for creating Face Recognition model
+3. [Keras](https://keras.io/) for creating Face Recognition model
 
-4. OpenCV for image processing
+4. [OpenCV](https://opencv.org/) for image processing
 
 **Usage**
 
@@ -41,5 +41,18 @@ tasks:
    
 3. Start the project:
     `python main.py`
+   
+4. Enter your name when prompted in the console.
+5. Focus on webcam while our images are captured. Webcam will stop once 10
+images are captured. You can increase this number if you want to improve the model accuracy.
+   
+6. The project will train a face recognition model based on the images 
+captured and facial embeddings generated from these captured images
+   
+7. Once model is trained, webcam will start, and you can now face the webcam
+to check the model prediction.
+   
+    
+   
     
 

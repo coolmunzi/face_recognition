@@ -32,6 +32,12 @@ class TrainingDataCollector:
                 frame = imutils.resize(frame, width=1280, height=640)
                 frames += 1
                 dtString = str(datetime.datetime.now().microsecond)
+
+                text1 = f"Capturing {name}'s images for training the model"
+                cv2.putText(frame, text1,
+                            (int(0.3 * frame.shape[1]), int(0.05 * frame.shape[0])), cv2.FONT_HERSHEY_SIMPLEX, 0.8,
+                            (255, 0, 0), 2)
+
                 # Detect the face using MTCNN detector
                 results = self.detector.detect_faces(frame)
                 #print(results)
@@ -68,6 +74,12 @@ class TrainingDataCollector:
                             cv2.imwrite(os.path.join(path, f"{dtString}.jpg"), nimg)
 
                         cv2.rectangle(frame, (max_bbox[0], max_bbox[1]), (max_bbox[2], max_bbox[3]), (255, 0, 0), 2)
+                        text = f"Captured image {faces+1}"
+                        cv2.putText(frame, text,
+                                    (max_bbox[0]-2, max_bbox[1]-2), cv2.FONT_HERSHEY_SIMPLEX,
+                                    0.8,
+                                    (255, 0, 0), 2)
+
                         print("[INFO] {} Image Captured".format(faces + 1))
                         faces += 1
                 cv2.imshow("Face detection", frame)
